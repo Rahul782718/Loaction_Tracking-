@@ -38,7 +38,7 @@ class _TrackingStatusCardState extends State<TrackingStatusCard> with SingleTick
   Widget build(BuildContext context) {
     return Card(
       elevation: 8,
-      shadowColor: widget.isTracking ? Colors.blue.withOpacity(0.5) : Colors.black26,
+      shadowColor: widget.isTracking ? Colors.blue.withValues(alpha:0.5) : Colors.black26,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(24)),
       child: AnimatedContainer(
         duration: const Duration(milliseconds: 500),
@@ -71,7 +71,7 @@ class _TrackingStatusCardState extends State<TrackingStatusCard> with SingleTick
                           height: 30,
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
-                            color: Colors.blue.withOpacity(0.3),
+                            color: Colors.blue.withValues(alpha:0.3),
                           ),
                         ),
                       ),

@@ -210,7 +210,7 @@ class _TimelineList extends StatelessWidget {
                   return Container(
                     padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
                     decoration: BoxDecoration(
-                      color: Colors.blue.withOpacity(0.1),
+                      color: Colors.blue.withValues(alpha:0.1),
                       borderRadius: BorderRadius.circular(10),
                     ),
                     child: Text(
@@ -258,7 +258,7 @@ class _TimelineList extends StatelessWidget {
                     leading: Container(
                       padding: const EdgeInsets.all(10),
                       decoration: BoxDecoration(
-                        color: Colors.blue.withOpacity(0.1),
+                        color: Colors.blue.withValues(alpha:0.1),
                         shape: BoxShape.circle,
                       ),
                       child: Icon(Icons.my_location, color: Colors.blue.shade700, size: 20),

@@ -68,7 +68,7 @@ class _TripQuickStats extends StatelessWidget {
         color: Colors.white,
         borderRadius: BorderRadius.circular(16),
         boxShadow: [
-          BoxShadow(color: Colors.black.withOpacity(0.1), blurRadius: 10),
+          BoxShadow(color: Colors.black.withValues(alpha:0.1), blurRadius: 10),
         ],
       ),
       child: Row(
@@ -133,7 +133,7 @@ class _SavedTimelineList extends StatelessWidget {
                 leading: Container(
                   padding: const EdgeInsets.all(10),
                   decoration: BoxDecoration(
-                    color: Colors.blue.withOpacity(0.1),
+                    color: Colors.blue.withValues(alpha:0.1),
                     shape: BoxShape.circle,
                   ),
                   child: Icon(Icons.history, color: Colors.blue.shade700, size: 20),
